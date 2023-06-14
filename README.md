@@ -8,14 +8,15 @@ As the code is a console application, there are no visual elements to show. The 
 ![Atm](Assets/Display-ATM.png)
 # Step-by-step directions (walk-through):
 To use the ATM program, follow these steps:
-Run the program.
-The console window will display a greeting message.
-The available options will be listed:
-View Balance: Shows the current account balance.
-Withdraw: Allows you to withdraw a specified amount from the account.
-Deposit: Lets you deposit a specified amount into the account.
-Exit: Exits the program.
-Enter the corresponding number for the action you want to perform:
+ - Run the program.
+ - The console window will display a greeting message.
+ - The available options will be listed:
+   - View Balance: Shows the current account balance.
+   - Withdraw: Allows you to withdraw a specified amount from the account.
+   - Deposit: Lets you deposit a specified amount into the account.
+   - Exit: Exits the program.
+- Enter the corresponding number for the action you want to perform:
+
 For example, if you want to view the balance, enter 1 and press Enter.
 The program will execute the selected action and display the corresponding information or prompt you for additional input if necessary.
 You can repeat the process by selecting another action until you choose to exit by entering 4.
