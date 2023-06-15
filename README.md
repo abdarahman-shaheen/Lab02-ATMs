@@ -6,6 +6,9 @@ The provided code is a simple implementation of an ATM (Automated Teller Machine
 As the code is a console application, there are no visual elements to show. The interactions and outputs are displayed in the console window.
 
 ![Atm](Assets/Display-ATM.png)
+![Atm-test](Assets/Test.png)
+
+
 # Step-by-step directions (walk-through):
 To use the ATM program, follow these steps:
  - Run the program.
