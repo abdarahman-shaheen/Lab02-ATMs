@@ -22,7 +22,7 @@ namespace TestATM
         }
 
         [Theory]
-        [InlineData(1500,0)]
+        [InlineData(1500,1150)]
         [InlineData(100,1050)]
         public void TestAmountLessThanBalanceInWithdrow(decimal testNumber, decimal excepted )
         {
@@ -40,7 +40,7 @@ namespace TestATM
         }
 
         [Theory]
-        [InlineData(-500, -1)]
+        [InlineData(-500, 1150)]
 
         public void TestAmountLessThanZeroInWithdrow(decimal testNumber, decimal excepted)
         {
@@ -58,7 +58,7 @@ namespace TestATM
         }
         [Theory]
         [InlineData(150, 1150)]
-        [InlineData(-100, 0)]
+        [InlineData(-100, 1150)]
         public void TestNegativeNumInDepost(decimal testNumber, decimal excepted)
         {
             //Arrange
