@@ -27,7 +27,7 @@
                 switch (number)
                 {
                     case 1:
-                        decimal outputBalance = ViewBalance();
+                        decimal outputBalance = ViewBalance(balance);
                         Console.WriteLine($"You have {outputBalance}$ in your account");
                         break;
                     case 2:
@@ -52,14 +52,25 @@
 
 
         }
-        public static decimal ViewBalance()
+        public static decimal ViewBalance( decimal Testbalance)
         {
+            if(Testbalance == balance)
+                return balance;
+            else
+            {
+                return 0;
 
-            return balance;
+            }
+
+
+
         }
         public static decimal Withdraw(decimal Amount)
         {
-
+            if(Amount < 0 ){
+                Console.WriteLine("You can't withdraw into your account with an amount less than zero");
+                return -1;
+            }
             if (balance < Amount)
             {
                 Console.WriteLine("you dont have this Amount in your account");
