@@ -58,7 +58,7 @@
                 return balance;
             else
             {
-                return 0;
+                return balance;
 
             }
 
@@ -69,12 +69,12 @@
         {
             if(Amount < 0 ){
                 Console.WriteLine("You can't withdraw into your account with an amount less than zero");
-                return -1;
+                return balance;
             }
             if (balance < Amount)
             {
                 Console.WriteLine("you dont have this Amount in your account");
-                return 0;
+                return balance;
             }
             balance -= Amount;
             return balance;
@@ -85,7 +85,7 @@
             if (Amount < 0)
             {
                 Console.WriteLine("you can't add a negative amount");
-                return 0;
+                return balance;
             }
             balance += Amount;
             return balance;
