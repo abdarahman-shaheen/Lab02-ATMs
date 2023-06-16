@@ -1,13 +1,15 @@
 using Lab02_ATMs;
+using Newtonsoft.Json.Linq;
 
 namespace TestATM
 {
     public class UnitTest1
     {
         [Theory]
-        [InlineData(1000, 1000)]
-        public void TestViewBalance(decimal testNumber, decimal excepted)
+        [InlineData(1000, 1000,1000)]
+        public void TestViewBalance(decimal testNumber, decimal excepted ,decimal value)
         {
+            Program.balance =value ;
             //Arrange
             //decimal testNumber = 1500;
 
@@ -22,15 +24,17 @@ namespace TestATM
         }
 
         [Theory]
-        [InlineData(1500,1150)]
-        [InlineData(100,1050)]
-        public void TestAmountLessThanBalanceInWithdrow(decimal testNumber, decimal excepted )
+        [InlineData(1500,1000,1000)]
+        [InlineData(100,900,1000)]
+        public void TestAmountLessThanBalanceInWithdrow(decimal testNumber, decimal excepted, decimal value)
         {
+            Program.balance = value;
+
             //Arrange
             //decimal testNumber = 1500;
 
             //Act
-           // decimal result = Program.Withdraw(testNumber);
+            // decimal result = Program.Withdraw(testNumber);
 
             Assert.Equal(excepted, Program.Withdraw(testNumber));
 
@@ -40,10 +44,12 @@ namespace TestATM
         }
 
         [Theory]
-        [InlineData(-500, 1150)]
+        [InlineData(-500, 1000,1000)]
 
-        public void TestAmountLessThanZeroInWithdrow(decimal testNumber, decimal excepted)
+        public void TestAmountLessThanZeroInWithdrow(decimal testNumber, decimal excepted, decimal value)
         {
+            Program.balance = value;
+
             //Arrange
             //decimal testNumber = 1500;
 
@@ -57,10 +63,12 @@ namespace TestATM
 
         }
         [Theory]
-        [InlineData(150, 1150)]
-        [InlineData(-100, 1150)]
-        public void TestNegativeNumInDepost(decimal testNumber, decimal excepted)
+        [InlineData(150, 1150,1000)]
+        [InlineData(-100, 1000,1000)]
+        public void TestNegativeNumInDepost(decimal testNumber, decimal excepted, decimal value)
         {
+            Program.balance = value;
+
             //Arrange
             //decimal testNumber = 1500;
 
