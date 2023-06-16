@@ -5,8 +5,8 @@ The provided code is a simple implementation of an ATM (Automated Teller Machine
 # Visuals:
 As the code is a console application, there are no visual elements to show. The interactions and outputs are displayed in the console window.
 
-![Atm](Assets/Display-ATM.png)
-![Atm-test](Assets/Test.png)
+![White-Bord](White-bord-Algo.jpg)
+![Atm-test](White-bord-Code.jpg)
 
 
 # Step-by-step directions (walk-through):
